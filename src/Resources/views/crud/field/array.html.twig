@@ -3,7 +3,7 @@
 {# @var entity \EasyCorp\Bundle\EasyAdminBundle\Dto\EntityDto #}
 {% if ea.crud.currentAction == 'detail' %}
     <ul>
-        {% for item in field.value %}
+        {% for item in field.formattedValue %}
             <li>{{ item }}</li>
         {% endfor %}
     </ul>
